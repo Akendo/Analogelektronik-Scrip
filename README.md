@@ -20,7 +20,7 @@ Wurde mit latex gebaut. Benötigt TeX Live 2015
 
 ## Download
 
-Dieses Script kann als PDF [hier](https://github.com/Akendo/ET1-script/raw/master/ET.pdf) herunter geladen werden.
+Dieses Script kann als PDF [hier](https://github.com/Akendo/Analogelektronik-Scrip/raw/master/script.pdf) herunter geladen werden.
 
 
 ## ToDO
