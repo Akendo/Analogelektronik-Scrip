@@ -1,0 +1,188 @@
+
+U-I Kennlinie eines ohmschen Widerstandes ( Linarer Widerstand)
+
+\begin{figure}[h!]
+  \begin{center}
+  \begin{tikzpicture}
+    % horizontal axis
+    \draw[->] (0,0) -- (4,0) node[anchor=north] {$I$};
+    \draw[->] (0,0) -- (0,3) node[anchor=west] {$U$};
+    % ranges
+   \draw (0,0) -- (3,3);
+  \end{tikzpicture}
+\end{center}
+\end{figure}
+$I=(U) = G * U $\\
+$U(I) = R * I $\\
+$ R = m =\frac{\Delta U}{\Delta I} $ (m ist die Steigung der gerade)\\
+\begin{figure}[h!]
+  \begin{center}
+  Anmerkung: Grob
+    \begin{tikzpicture}
+    % horizontal axis
+    \draw[->] (-2,0) -- (4,0) node[anchor=north] {$I$};
+    \draw[->] (0,-2) -- (0,3) node[anchor=west] {$U$};
+    % ranges
+   \draw (-2,-0.1) -- (0,0) cos (1.5,3);
+  \end{tikzpicture}
+  \end{center}
+\end{figure}
+
+$y=\rho$
+
+$R_2 = R_1 + \Delta R$
+
+$\alpha $ ists hier Temperaturwerte 
+$\Delta R = R_1 \dot \alpha \dot \Delta \theta$
+$R_2 R_1 (1 + \alpha \cdot \Delta \theta) $
+Notiz: welches delte ist nur hier gemeint?
+
+Widerstandswert bliebt nicht konstant
+
+Bei jedem Arbeitspunkt $R = \frac{U}{I}$\\
+$ P_1: R_1 = \frac{U_1}{I_1} $\\
+$ P_2: R_2 = \frac{U_2}{I_1} $\\
+
+$ R_1 != R_2 $\\
+
+Hier ist $R != \frac{\Delta u}{\Delta I} $\\
+
+Es ist nicht mehr Proportional
+
+Keine proportional Abhänigkeit vorhanden!
+$R$ ist nicht konstant.
+
+\section{Heiß und Klar Leiter}
+
+Schlagwort Überwacher
+
+Nicht linare Widerstände
+NTC -  Negative Temprature Coefficient 
+
+\begin{figure}[h!]
+  \begin{center}
+  \begin{tikzpicture}
+    % horizontal axis
+    \draw[->] (0,0) -- (4,0) node[anchor=north]{$\upsilon / ^{\circ}\mathrm{C}$};
+    \draw[->] (0,0) -- (0,3) node[anchor=west] {$R/\Omega$};
+    % ranges
+   \draw (0,1.6) sin (4,1);
+  \end{tikzpicture}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+  \begin{center}
+     Bauzeichen\\
+    \begin{circuitikz}[european]
+    \draw (0,0) to[thRn] (5,0);
+    \end{circuitikz}
+  \end{center}
+\end{figure}
+
+PTC  - Positive Temperature Coefficient
+\begin{figure}[h!]
+  \begin{center}
+  Anmerkung: Grobe Darstellung
+  \begin{tikzpicture}
+    % horizontal axis
+    \draw[->] (0,0) -- (7,0) node[anchor=north]{$T/ ^{\circ}\mathrm{C}$};
+    \draw[->] (0,0) -- (0,5) node[anchor=west] {$R/\Omega$};
+    % ranges
+   \draw (0,1.4) cos (2,1) cos(3,3) sin (4,5) -- (5,5.1);
+
+   \draw[dotted] (2,1) -- (2,0) node[anchor=south]{$T_A$}; %
+   \draw[dotted] (2.4,1.4) -- (2.4,0)node[anchor=south]{$T_N$};
+   \draw[dotted] (3.9,4.9) -- (3.9,0)node[anchor=south]{$T_E$};
+
+   \draw[dotted] (0,1) -- (6,1)node[anchor=west]{$R_A$};
+   \draw[dotted] (0,1.4) -- (6,1.4)node[anchor=west]{$R_N$};
+  \end{tikzpicture}
+\end{center}
+\end{figure}\\
+Wir kleiner bis $T_A$\\
+Einsatzbereich: \\
+ $T_N - T_E $\\
+\\
+A: Anfrangspunkt\\
+$T_A - T_N$: Nichtlinarer Breich\\
+\\
+$T_N - T_E$: Gültigkeitsbereich\\
+
+
+\begin{figure}[h!]
+  \begin{center}
+     Bauzeichen\\
+    \begin{circuitikz}[european]
+    \draw (0,0) to[thRp] (5,0);
+    \end{circuitikz}
+  \end{center}
+\end{figure}
+
+NTC und PTC werden in zwei verschiedenen Gruppen eingeteilt:
+1. Fremdrwärmte
+2. Eigenerwärmte 
+
+\subsection{Varistoren - VDR}
+Spannungsunabhänige Widerstände
+
+\begin{figure}[h!]
+  \begin{center}
+  Grober verlauf
+  \begin{tikzpicture}
+    % horizontal axis
+    \draw[->] (0,0) -- (7,0) node[anchor=north]{$U/V$};
+    \draw[->] (0,0) -- (0,4) node[anchor=west] {$R/\Omega$};
+    % ranges
+   \draw (1,3) sin (7,1.5);
+  \end{tikzpicture}
+\end{center}
+\end{figure}
+
+U-I 
+
+\begin{figure}[h!]
+  \begin{center}
+  Grober verlauf
+  \begin{tikzpicture}
+    % horizontal axis
+    \draw[->] (-4,0) -- (4,0) node[anchor=north]{$U/V$};
+    \draw[->] (0,-4) -- (0,4) node[anchor=west] {$R/\Omega$};
+    % ranges
+   \draw (-2,-3) sin (0,0) cos (2,4);
+  \end{tikzpicture}
+\end{center}
+\end{figure}
+Voltage Dependent Resistor 
+
+Mit den Varistor werden $C$-und $\beta$-werte bekannt gegeben.
+$U = C \cdot I^{\beta}$\\
+$R = \frac{U}{I} = C * \frac{I^{\beta}}{I} $
+
+C: Konstante
+Gibt die Spannung an, bei der ein Storm $1A$ durch den VDR fließt. 
+
+$C = 15 - 5.000$
+
+$\beta$: Regelfaktor: ein Maß fuer die Steilheit der Kennlinine
+
+$beta = 0,15 - 0,4 $
+
+$U = C * I^{\beta}$
+$\frac{U}{C} = I^{\beta} | \frac{1}{\beta}$
+$(\frac{U}{C})^{\frac{1}{\beta}} = (I^{beta})^{\frac{1}{\beta}}$
+$(\frac{U}{C}) = I \rightarrow R = \frac{U}{(\frac{U}{C})^{\frac{1}{\beta}}}$
+ 
+\newpage
+\subsection{Fotowiderstand} % (fold)
+\label{sub:fotowiderstand}
+Fotowiderstand - LDR Light Depende Resistor
+
+\begin{figure}[h!]
+  \begin{center}
+     Bauzeichen\\
+    \begin{circuitikz}[european]
+    \draw (0,0) to[phR] (5,0);
+    \end{circuitikz}
+  \end{center}
+\end{figure}
+% subsection f (end)

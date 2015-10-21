@@ -1,0 +1,148 @@
+
+U-I Kennlinie eines ohmschen Widerstandes ( Linarer Widerstand)
+
+
+graph linare 
+
+
+I=(u) = G * U
+
+
+U(I) = R * I 
+
+R =  delta U / detla I = m (steigung der gerade)
+
+
+graph diode 
+
+y=I x=U 
+
+https://de.wikipedia.org/wiki/Strom-Spannungs-Kennlinie
+
+
+graph 
+
+y=roh 
+
+R_2 = R_1 + delta R
+
+
+Alpha ist hier Temperaturewert
+
+delta R = R_1 * alpha * delta teta
+R_2 = R_1 (1 + delta * delta teta)
+
+
+Widerstands wert bleibt nicht konstant 
+
+Bei jedem Arbeitspunkt R = U/I 
+
+P_1: R_1 = U_1/ I_1
+P_2 : R_2 = U_2/I_1
+
+R_1 != R_2
+
+Hier ist R != delta u / delta I 
+
+Es ist nicht mehr Proporational 
+
+Keine proportionale Abhqenigkeit vorhanden!
+R ist nicht konstant 
+
+
+
+Heiß Leiter
+Klar Leiter 
+
+Schlagwort überwacher 
+
+Nicht linare Widerstände
+NTC -  Negative Temprature Coefficient 
+https://de.wikipedia.org/wiki/Hei%C3%9Fleiter
+
+http://www.elektronik-kompendium.de/sites/bau/diagramm/02080311.gif
+
+Bauzeichen
+http://www.elektronik-kompendium.de/sites/bau/zeichen/02080311.gif
+
+http://www.elektronik-kompendium.de/sites/bau/0208031.htm
+
+PTC  - Positive Temperature Coefficient
+https://de.wikipedia.org/wiki/Kaltleiter
+
+
+Wir kleiner bis T_A
+Einsatzbereich: 
+ T_N - T_E 
+
+
+A: Anfrangspunkt
+T_A - T_N: Nichtlinarer Breich
+
+T_N - T_E: Gültigkeitsbereich
+
+Bauzeichen:
+http://www.elektronik-kompendium.de/sites/bau/zeichen/01110511.gif
+
+
+
+NTC und PTC werden in zwei verschiedenen Gruppen eingeteilt:
+1. Fremdrwärmte
+2. Eigenerwärmte 
+
+
+
+Varistoren - VDR
+Spannungsunabhänige Widerstände
+
+https://www.elektronik-kompendium.de/sites/bau/diagramm/02080322.gif
+
+U-I 
+
+https://upload.wikimedia.org/wikipedia/commons/d/d2/Typische_Varistorkennlinien.gif
+
+Voltage Dependent Resistor 
+https://en.wikipedia.org/wiki/Varistor
+
+
+Mit den varisotrn wernde C-und Beta-werte bekannt gegben
+U = C * I^beta
+
+
+R = U/I = C * I^beta/I 
+
+C: Konstante
+Gibt die Spannung an, bei der ein Storm 1A durch den VDR fließt. 
+
+C = 15 - 5.000
+
+ß: Regelfaktor: ein Maß fuer die Steilheit der Kennlinine
+
+ß = 0,15 - 0,4 
+
+https://de.wikipedia.org/wiki/Varistor
+
+
+U = C * I^ß
+
+U/C = I^ß | 1/ß
+(U/C)^1/ß = (I^ß)^1/ß
+(U/C) = I
+ => R = U / (U/C)^1/ß
+
+
+ https://www.elektronik-kompendium.de/sites/bau/diagramm/02080322.gif
+
+
+Fotowiderstand - LDR Light Depende Resistor
+https://de.wikipedia.org/wiki/Fotowiderstand
+
+https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Light-dependent_resistor_schematic_symbol.svg/320px-Light-dependent_resistor_schematic_symbol.svg.png
+
+
+
+http://www.resistorguide.com/photoresistor/
+
+
+
+
